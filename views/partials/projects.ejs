@@ -1,0 +1,23 @@
+<section class="projects-section bprimary py-10 md:px-10 px-5" id="projects">
+    <div class="content mb-10">
+        <h1 class="sm:text-5xl text-4xl w-full text-center font-bold uppercase tlight">my projects</h1>
+    </div>
+    <div class="projects tlight flex overflow-x-auto py-10">
+        <% for(let i=0; i<5; i++){ %>
+            <div class="project mr-5 shrink-0 md:w-1/3 sm:1/2 w-screen">
+                <h1 class="text-xl font-bold mb-5">Project name here</h1>
+                <p class="mb-5 sm:text-base text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur enim quisquam
+                    laboriosam iste
+                    sint
+                    possimus exercitationem libero? Obcaecati, accusantium neque.</p>
+                <p class="sm:text-base text-sm"><span class="font-bold">Tech Stack:</span> name, name, name, name, name,
+                    name
+                </p>
+                <a href="#"
+                    class="btn-small  block px-10 md:py-4 py-4 text-sm blp w-fit tprimary mt-5 rounded-lg ">Source
+                    Code</a>
+            </div>
+            <% } %>
+    </div>
+</section>

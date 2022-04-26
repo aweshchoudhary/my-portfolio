@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --b-primary: #e50000;
+  --b-hover: #af0000;
+  --secondary: #8b0000;
+  --primary: var(--b-primary);
+  --p-hover: var(--b-hover);
+}
+
+html.light:root {
+  --t-primary: var(--primary);
+  --text: #383838;
+  --l-hover: rgba(129, 129, 129, 0.867);
+  --b-light: #ffff;
+  --t-light: #ffff;
+  --darklight: #f6f6f6;
+  --b-bld: #fff;
+  --b-blp: #fff;
+  --b-blp-hover: #e0e0e0;
+}
+
+html.dark:root {
+  --primary: rgb(43, 43, 43);
+  --p-hover: #000000;
+  --t-primary: #ffffff;
+  --text: #ffffff;
+  --l-hover: rgb(43, 43, 43);
+  --b-bld: rgb(24, 24, 24);
+  --b-blp: var(--b-primary);
+  --b-blp-hover: var(--b-hover);
+  --t-light: #ffffff;
+  --darklight: #ffffff;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.4s all ease-in-out;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: "Poppins";
+  z-index: 1;
+  background: var(--b-bld);
+}
+
+.primary {
+  background: var(--b-primary);
+}
+
+.primary:hover {
+  background: var(--b-hover) !important;
+}
+
+.bprimary {
+  background: var(--primary);
+}
+
+.bsecondary {
+  background: var(--secondary);
+}
+
+.bdarklight {
+  background: var(--darklight);
+}
+
+.bld {
+  background: var(--b-bld);
+}
+
+.blp {
+  background: var(--b-blp);
+}
+
+.tprimary {
+  color: var(--t-primary);
+}
+
+.tlight {
+  color: var(--t-light);
+}
+
+.tdark {
+  color: var(--text);
+}
+
+.choverlight:hover {
+  color: var(--l-hover);
+}
+
+.btn:hover,
+.btn-small:hover {
+  background: var(--b-blp-hover);
+}
+
+.btn2:hover,
+.btn-small2:hover {
+  background: var(--b-blp-hover);
+}
+
+li.icon a:hover {
+  color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    background: var(--secondary);
+    /* position: relative; */
+    z-index: 999;
+    transform: translateX(-400px);
+  }
+
+  .black-screen {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.411);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .black-screen.close {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@tailwind utilities;

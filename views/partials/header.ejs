@@ -1,50 +1,50 @@
-<header class="bprimary tlight sm:px-10 px-5">
-    <nav class="flex items-center justify-between h-[100px] py-5 flex-wrap ">
-        <div class="logo h-full flex items-center justify-between md:w-auto w-full">
-            <img src="/assets/logo.png" class="h-[80%] md:w-full w-auto object-cover" alt="website logo here">
-            <div class="open-btn text-4xl cursor-pointer md:hidden" onclick="openSidebar()">=</div>
+<nav id="navbar"
+    class="fixed top-0 left-0 flex items-center justify-between h-[100px] py-5 flex-wrap z-40 w-full md:px-10 px-5">
+    <div class="logo h-full flex items-center justify-between md:w-auto w-full">
+        <img src="/assets/logo.png" class="h-[80%] md:w-full w-auto object-cover" alt="website logo here">
+        <div class="open-btn text-xl tlight cursor-pointer md:hidden" onclick="openSidebar()"><span class="iconify"
+                data-icon="fa:bars"></span></div>
+    </div>
+    <ul class="nav-links tlight md:static absolute top-0 left-0 md:flex items-center justify-end md:w-auto w-[300px]
+        capitalize md:h-auto h-screen md:px-0 px-5">
+        <h1 class="text-2xl md:hidden font-bold mt-5 border-b md:pb-0 pb-5 md:mb-0 mb-5">Awesh <br> Choudhary
+        </h1>
+        <div onclick="closeSidebar()" class="close-btn md:hidden text-4xl absolute top-5 right-5 cursor-pointer">
+            <span class="iconify" data-icon="pepicons:times"></span>
         </div>
-        <ul class="nav-links md:static absolute top-0 left-0 md:flex items-center justify-end md:w-auto w-[300px]
-            capitalize md:h-auto h-screen md:px-0 px-5">
-            <h1 class="text-2xl md:hidden font-bold mt-5 border-b md:pb-0 pb-5 md:mb-0 mb-5">Awesh <br> Choudhary
-            </h1>
-            <div onclick="closeSidebar()" class="close-btn md:hidden absolute top-5 right-5 cursor-pointer">
-                x
-            </div>
-            <li class="md:pr-5 md:pb-0 md:mb-0 pb-3 mb-2"><a href="#">home</a>
-            </li>
-            <li class="md:pr-5 md:pb-0 md:mb-0 pb-3 mb-2"><a href="#about">about
-                    me</a></li>
-            <li class="md:pr-5 md:pb-0 md:mb-0 pb-3 mb-2"><a href="#projects">projects</a></li>
-            <li class="md:pr-5 md:pb-0 md:mb-0 pb-3 mb-2"><a href="#testimonials">testimonials</a>
-            </li>
-            <li class="md:pr-5 md:pb-0 md:mb-0 pb-3 mb-2"><a href="#contact">contact me</a></li>
-            <li class="cursor-pointer" onclick="toggleTheme()"><a>D</a></li>
-        </ul>
-        <div class="black-screen close md:hidden"></div>
-    </nav>
-    <div class="slider min-h-[550px]">
-        <div class="slide">
-            <div class="background"></div>
-            <div class="content flex md:flex-row flex-col-reverse items-center justify-between  py-10">
-                <div class="left md:w-[50%]">
-                    <h1 class="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold capitalize">
-                        hey, i am <br>
-                        awesh choudhary
-                    </h1>
-                    <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-                        ipsum incidunt saepe amet
-                        asperiores, molestiae facere distinctio voluptas? .</p>
+        <li class="md:pr-5 md:pb-0 md:mb-0 pb-3 mb-2"><a href="#">home</a>
+        </li>
+        <li class="md:pr-5 md:pb-0 md:mb-0 pb-3 mb-2"><a href="#about">about
+                me</a></li>
+        <li class="md:pr-5 md:pb-0 md:mb-0 pb-3 mb-2"><a href="#projects">projects</a></li>
+        <li class="md:pr-5 md:pb-0 md:mb-0 pb-3 mb-2"><a href="#testimonials">testimonials</a>
+        </li>
+        <li class="md:pr-5 md:pb-0 md:mb-0 pb-3 mb-2"><a href="#contact">contact me</a></li>
+        <li class="cursor-pointer flex items-center" onclick="toggleTheme()"><span class="iconify text-xl mr-3"
+                data-icon="fluent:dark-theme-24-filled">
 
-                    <a href="#" class="btn block px-12 md:py-5 py-4 text-base blp w-fit tprimary mt-5 rounded-lg ">Learn
-                        More
-                    </a>
-                </div>
-                <div class="right md:w-[50%] flex items-center md:justify-end justify-center">
-                    <img src="/assets/illustration.svg" class="h-full md:w-[85%] sm:w-1/2 object-cover"
-                        alt="header backgorund illustration">
-                </div>
+            </span><span class="md:hidden">Change Theme</span></li>
+    </ul>
+    <div class="black-screen close md:hidden"></div>
+</nav>
+<header class="header h-full w-screen relative bprimary tlight" style="padding-top: 70px;">
+    <div
+        class="slider sticky top-0 left-0 z-20 w-full h-full flex md:flex-row  flex-col-reverse items-center py-10  md:px-10 px-5">
+        <div class="left md:w-1/2 md:mt-0 mt-10">
+            <div class="content">
+                <h1 class="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold mb-5">Hey, I am <br> awesh choudhary
+                </h1>
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus minima mollitia,
+                    eos iure porro
+                    quos distinctio molestias minus</p>
+                <a href="#" class="btn block px-12 md:py-5 py-4 text-base blp w-fit tprimary mt-5 rounded-lg">Learn
+                    More</a>
             </div>
+        </div>
+        <div class="right md:w-1/2 w-full h-full flex justify-end items-center">
+            <img class="img h-[80%] w-full" src="/assets/illustration.svg" />
         </div>
     </div>
+    <img class="background absolute bottom-0 right-0 z-10" src="/assets/bg.svg" />
 </header>
+<!-- <div class="mb-[100vh]"> </div> -->

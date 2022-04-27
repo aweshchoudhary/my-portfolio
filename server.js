@@ -10,8 +10,9 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 app.use(expressLayouts);
 
-app.get("/", (req, res) => {
-  res.render("home");
+app.get("/", async (req, res) => {
+  const lp = require("./public/json/lp.json");
+  res.render("home", { lp });
 });
 
 app.listen(port, () => console.log(`Server is listening on port : ${port}`));

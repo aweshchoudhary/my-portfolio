@@ -6,7 +6,7 @@
 :root {
   --b-primary: #e50000;
   --b-hover: #af0000;
-  --secondary: #8b0000;
+  --secondary: #cc0000;
   --primary: var(--b-primary);
   --p-hover: var(--b-hover);
 }
@@ -22,6 +22,7 @@ html.light:root {
   --b-blp: #fff;
   --b-blp-hover: #e0e0e0;
 }
+
 
 html.dark:root {
   --primary: rgb(43, 43, 43);

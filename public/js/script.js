@@ -23,6 +23,7 @@ changeTheme();
 //sidebar
 const sidebar = document.querySelector(".nav-links");
 const blackScreen = document.querySelector(".black-screen");
+const navbar = document.querySelector("#navbar");
 
 function closeSidebar() {
   sidebar.style.transform = "translateX(-400px)";
@@ -32,3 +33,11 @@ function openSidebar() {
   sidebar.style.transform = "translateX(0)";
   blackScreen.classList.remove("close");
 }
+
+window.onscroll = () => {
+  if (window.scrollY === 0) {
+    navbar.classList.remove("primary");
+  } else {
+    navbar.classList.add("primary");
+  }
+};

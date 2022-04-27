@@ -473,7 +473,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 :root {
   --b-primary: #e50000;
   --b-hover: #af0000;
-  --secondary: #8b0000;
+  --secondary: #cc0000;
   --primary: var(--b-primary);
   --p-hover: var(--b-hover);
 }
@@ -601,8 +601,21 @@ li.icon a:hover {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .top-0 {
@@ -619,6 +632,26 @@ li.icon a:hover {
 
 .right-5 {
   right: 1.25rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .my-10 {
@@ -653,6 +686,10 @@ li.icon a:hover {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-\[100vh\] {
+  margin-bottom: 100vh;
 }
 
 .mb-10 {
@@ -697,10 +734,6 @@ li.icon a:hover {
 
 .h-auto {
   height: auto;
-}
-
-.min-h-\[550px\] {
-  min-height: 550px;
 }
 
 .w-full {
@@ -882,14 +915,14 @@ li.icon a:hover {
   line-height: 1.5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -911,10 +944,6 @@ li.icon a:hover {
 @media (min-width: 640px) {
   .sm\:h-\[250px\] {
     height: 250px;
-  }
-
-  .sm\:w-1\/2 {
-    width: 50%;
   }
 
   .sm\:px-10 {
@@ -951,6 +980,10 @@ li.icon a:hover {
     margin-bottom: 0px;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -979,12 +1012,8 @@ li.icon a:hover {
     width: 100%;
   }
 
-  .md\:w-\[50\%\] {
+  .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:w-\[85\%\] {
-    width: 85%;
   }
 
   .md\:w-\[40\%\] {
@@ -997,10 +1026,6 @@ li.icon a:hover {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:justify-end {
-    justify-content: flex-end;
   }
 
   .md\:p-10 {

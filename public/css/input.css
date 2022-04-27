@@ -51,6 +51,9 @@ body {
   font-family: "Poppins";
   z-index: 1;
   background: var(--b-bld);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .primary {

@@ -1,7 +1,7 @@
 <nav id="navbar"
-    class="fixed top-0 left-0 flex items-center justify-between h-[100px] py-5 flex-wrap z-40 w-full md:px-10 px-5">
+    class="fixed top-0 left-0 flex items-center justify-between sm:h-[100px] h-[70px] py-5 flex-wrap z-40 w-full md:px-10 px-5">
     <div class="logo h-full flex items-center justify-between md:w-auto w-full">
-        <img src="/assets/logo.png" class="h-[80%] md:w-full w-auto object-cover" alt="website logo here">
+        <img src="/assets/logo.png" class="h-full md:w-full w-[40px]" alt="website logo here">
         <div class="open-btn text-xl tlight cursor-pointer md:hidden" onclick="openSidebar()"><span class="iconify"
                 data-icon="fa:bars"></span></div>
     </div>
@@ -27,21 +27,21 @@
     </ul>
     <div class="black-screen close md:hidden"></div>
 </nav>
-<header class="header h-full w-screen relative bprimary tlight" style="padding-top: 70px;">
+<header class="header min-h-full w-screen relative bprimary tlight">
+    <div class="pt-[50px]"></div>
     <div
         class="slider sticky top-0 left-0 z-20 w-full h-full flex md:flex-row  flex-col-reverse items-center py-10  md:px-10 px-5">
         <div class="left md:w-1/2 md:mt-0 mt-10">
             <div class="content">
                 <h1 class="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold mb-5">Hey, I am <br> awesh choudhary
                 </h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus minima mollitia,
-                    eos iure porro
-                    quos distinctio molestias minus</p>
+                <p class="mb-5">Professional frontend developer with having 3+ years of experience in these fields and
+                    created a wide range of frontend developement.</p>
                 <a href="#" class="btn block px-12 md:py-5 py-4 text-base blp w-fit tprimary mt-5 rounded-lg">Learn
                     More</a>
             </div>
         </div>
-        <div class="right md:w-1/2 w-full h-full flex justify-end items-center">
+        <div class="right md:w-1/2 w-full h-full flex justify-end items-center md:pt-0">
             <img class="img h-[80%] w-full" src="/assets/illustration.svg" />
         </div>
     </div>
